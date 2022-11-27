@@ -1,0 +1,46 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/posts/[postId]";
+exports.ids = ["pages/posts/[postId]"];
+exports.modules = {
+
+/***/ "./pages/posts/[postId].js":
+/*!*********************************!*\
+  !*** ./pages/posts/[postId].js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post),\n/* harmony export */   \"getStaticPaths\": () => (/* binding */ getStaticPaths),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Post({ post  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Single Post\"\n            }, void 0, false, {\n                fileName: \"E:\\\\code\\\\NEXTJs\\\\next-pre-rendering\\\\pages\\\\posts\\\\[postId].js\",\n                lineNumber: 4,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                children: [\n                    post.id,\n                    \" \",\n                    post.title\n                ]\n            }, void 0, true, {\n                fileName: \"E:\\\\code\\\\NEXTJs\\\\next-pre-rendering\\\\pages\\\\posts\\\\[postId].js\",\n                lineNumber: 5,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: post.body\n            }, void 0, false, {\n                fileName: \"E:\\\\code\\\\NEXTJs\\\\next-pre-rendering\\\\pages\\\\posts\\\\[postId].js\",\n                lineNumber: 6,\n                columnNumber: 13\n            }, this)\n        ]\n    }, void 0, true);\n}\nasync function getStaticProps(context) {\n    const { params  } = context;\n    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`);\n    const data = await response.json();\n    return {\n        props: {\n            post: data\n        }\n    };\n}\n// to be added with getStaticPaths intro\n// export async function getStaticPaths() {\n//     return {\n//         paths: [\n//             {\n//                 params: { postId: '1' },\n//             },\n//             {\n//                 params: { postId: '2' },\n//             },\n//             {\n//                 params: { postId: '3' },\n//             },\n//             {\n//                 params: { postId: '4' },\n//             },\n//             {\n//                 params: { postId: '5' },\n//             },\n//         ],\n//         fallback: false\n//     }\n// }\n// now for dynamic path\nasync function getStaticPaths() {\n    const response = await fetch(\"https://jsonplaceholder.typicode.com/posts\");\n    const data = await response.json();\n    const paths = data.map((post)=>{\n        return {\n            params: {\n                postId: `${post.id}`\n            }\n        };\n    });\n    return {\n        paths: paths,\n        fallback: false\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9wb3N0cy9bcG9zdElkXS5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBQWUsU0FBU0EsS0FBSyxFQUFFQyxLQUFJLEVBQUUsRUFBRTtJQUNuQyxxQkFDSTs7MEJBQ0ksOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNDOztvQkFBSUYsS0FBS0csRUFBRTtvQkFBQztvQkFBRUgsS0FBS0ksS0FBSzs7Ozs7OzswQkFDekIsOERBQUNDOzBCQUFHTCxLQUFLTSxJQUFJOzs7Ozs7OztBQUd6QixDQUFDO0FBRU0sZUFBZUMsZUFBZUMsT0FBTyxFQUFFO0lBQzFDLE1BQU0sRUFBRUMsT0FBTSxFQUFFLEdBQUdEO0lBQ25CLE1BQU1FLFdBQVcsTUFBTUMsTUFBTSxDQUFDLDJDQUEyQyxFQUFFRixPQUFPRyxNQUFNLENBQUMsQ0FBQztJQUMxRixNQUFNQyxPQUFPLE1BQU1ILFNBQVNJLElBQUk7SUFFaEMsT0FBTztRQUNIQyxPQUFPO1lBQ0hmLE1BQU1hO1FBQ1Y7SUFDSjtBQUNKLENBQUM7QUFFRCx3Q0FBd0M7QUFFeEMsMkNBQTJDO0FBQzNDLGVBQWU7QUFDZixtQkFBbUI7QUFDbkIsZ0JBQWdCO0FBQ2hCLDJDQUEyQztBQUMzQyxpQkFBaUI7QUFDakIsZ0JBQWdCO0FBQ2hCLDJDQUEyQztBQUMzQyxpQkFBaUI7QUFDakIsZ0JBQWdCO0FBQ2hCLDJDQUEyQztBQUMzQyxpQkFBaUI7QUFDakIsZ0JBQWdCO0FBQ2hCLDJDQUEyQztBQUMzQyxpQkFBaUI7QUFDakIsZ0JBQWdCO0FBQ2hCLDJDQUEyQztBQUMzQyxpQkFBaUI7QUFDakIsYUFBYTtBQUNiLDBCQUEwQjtBQUMxQixRQUFRO0FBQ1IsSUFBSTtBQUdKLHVCQUF1QjtBQUVoQixlQUFlRyxpQkFBaUI7SUFDbkMsTUFBTU4sV0FBVyxNQUFNQyxNQUFNO0lBQzdCLE1BQU1FLE9BQU8sTUFBTUgsU0FBU0ksSUFBSTtJQUVoQyxNQUFNRyxRQUFRSixLQUFLSyxHQUFHLENBQUMsQ0FBQ2xCLE9BQVM7UUFDN0IsT0FBTztZQUNIUyxRQUFRO2dCQUNKRyxRQUFRLENBQUMsRUFBRVosS0FBS0csRUFBRSxDQUFDLENBQUM7WUFDeEI7UUFDSjtJQUNKO0lBRUEsT0FBTztRQUNIYyxPQUFPQTtRQUNQRSxVQUFVLEtBQUs7SUFDbkI7QUFDSixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbmV4dC1wcmUtcmVuZGVyaW5nLy4vcGFnZXMvcG9zdHMvW3Bvc3RJZF0uanM/YzI0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQb3N0KHsgcG9zdCB9KSB7XHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDw+XHJcbiAgICAgICAgICAgIDxoMT5TaW5nbGUgUG9zdDwvaDE+XHJcbiAgICAgICAgICAgIDxoMj57cG9zdC5pZH0ge3Bvc3QudGl0bGV9PC9oMj5cclxuICAgICAgICAgICAgPHA+e3Bvc3QuYm9keX08L3A+XHJcbiAgICAgICAgPC8+XHJcbiAgICApXHJcbn1cclxuXHJcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdGF0aWNQcm9wcyhjb250ZXh0KSB7XHJcbiAgICBjb25zdCB7IHBhcmFtcyB9ID0gY29udGV4dDtcclxuICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goYGh0dHBzOi8vanNvbnBsYWNlaG9sZGVyLnR5cGljb2RlLmNvbS9wb3N0cy8ke3BhcmFtcy5wb3N0SWR9YCk7XHJcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpO1xyXG5cclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgcHJvcHM6IHtcclxuICAgICAgICAgICAgcG9zdDogZGF0YVxyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG5cclxuLy8gdG8gYmUgYWRkZWQgd2l0aCBnZXRTdGF0aWNQYXRocyBpbnRyb1xyXG5cclxuLy8gZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN0YXRpY1BhdGhzKCkge1xyXG4vLyAgICAgcmV0dXJuIHtcclxuLy8gICAgICAgICBwYXRoczogW1xyXG4vLyAgICAgICAgICAgICB7XHJcbi8vICAgICAgICAgICAgICAgICBwYXJhbXM6IHsgcG9zdElkOiAnMScgfSxcclxuLy8gICAgICAgICAgICAgfSxcclxuLy8gICAgICAgICAgICAge1xyXG4vLyAgICAgICAgICAgICAgICAgcGFyYW1zOiB7IHBvc3RJZDogJzInIH0sXHJcbi8vICAgICAgICAgICAgIH0sXHJcbi8vICAgICAgICAgICAgIHtcclxuLy8gICAgICAgICAgICAgICAgIHBhcmFtczogeyBwb3N0SWQ6ICczJyB9LFxyXG4vLyAgICAgICAgICAgICB9LFxyXG4vLyAgICAgICAgICAgICB7XHJcbi8vICAgICAgICAgICAgICAgICBwYXJhbXM6IHsgcG9zdElkOiAnNCcgfSxcclxuLy8gICAgICAgICAgICAgfSxcclxuLy8gICAgICAgICAgICAge1xyXG4vLyAgICAgICAgICAgICAgICAgcGFyYW1zOiB7IHBvc3RJZDogJzUnIH0sXHJcbi8vICAgICAgICAgICAgIH0sXHJcbi8vICAgICAgICAgXSxcclxuLy8gICAgICAgICBmYWxsYmFjazogZmFsc2VcclxuLy8gICAgIH1cclxuLy8gfVxyXG5cclxuXHJcbi8vIG5vdyBmb3IgZHluYW1pYyBwYXRoXHJcblxyXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U3RhdGljUGF0aHMoKSB7XHJcbiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKCdodHRwczovL2pzb25wbGFjZWhvbGRlci50eXBpY29kZS5jb20vcG9zdHMnKTtcclxuICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7XHJcblxyXG4gICAgY29uc3QgcGF0aHMgPSBkYXRhLm1hcCgocG9zdCkgPT4ge1xyXG4gICAgICAgIHJldHVybiB7XHJcbiAgICAgICAgICAgIHBhcmFtczoge1xyXG4gICAgICAgICAgICAgICAgcG9zdElkOiBgJHtwb3N0LmlkfWBcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgIH0pXHJcblxyXG4gICAgcmV0dXJuIHtcclxuICAgICAgICBwYXRoczogcGF0aHMsXHJcbiAgICAgICAgZmFsbGJhY2s6IGZhbHNlXHJcbiAgICB9XHJcbn1cclxuIl0sIm5hbWVzIjpbIlBvc3QiLCJwb3N0IiwiaDEiLCJoMiIsImlkIiwidGl0bGUiLCJwIiwiYm9keSIsImdldFN0YXRpY1Byb3BzIiwiY29udGV4dCIsInBhcmFtcyIsInJlc3BvbnNlIiwiZmV0Y2giLCJwb3N0SWQiLCJkYXRhIiwianNvbiIsInByb3BzIiwiZ2V0U3RhdGljUGF0aHMiLCJwYXRocyIsIm1hcCIsImZhbGxiYWNrIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/posts/[postId].js\n");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/posts/[postId].js"));
+module.exports = __webpack_exports__;
+
+})();
